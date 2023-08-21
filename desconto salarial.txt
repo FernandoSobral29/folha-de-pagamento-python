@@ -1,0 +1,27 @@
+nome = input ("Digite o nome do funcionário: ")
+print ("Nome do funcionário é", nome, "\n")
+
+salario = float(input("Qual o atual salário bruto do funcionário? "))
+print (f"o seu salário bruto de {nome} é {salario}")
+
+if salario <= 1302.00:
+    perc =  7.5
+elif salario <= 2571.29:
+    perc = 9
+    salario = (salario+19.80)
+elif salario <= 3856.94:
+    perc = 12
+    salario = (salario+96.94)
+elif salario > 3856.94:
+    perc = 14
+    salario = (salario+174.08)
+    
+VT = float(input("deseja vale transporte? (1-sim ou 2-não) "))
+
+if VT == 1:
+    perc = perc + 6
+elif VT != 1:
+    perc = perc
+    
+liquido = (salario-(salario*perc)/100)
+print (f"O salário liquido de {nome} é {liquido}")
