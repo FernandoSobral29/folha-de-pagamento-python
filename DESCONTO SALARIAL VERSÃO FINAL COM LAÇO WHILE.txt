@@ -17,7 +17,7 @@ elif salario <= 3856.94:
     perc = 12
     INSS = 96.94
 
-elif salario <= 3856.94:
+elif salario <= 7507.49:
     perc = 14
     INSS = 174.08
 
